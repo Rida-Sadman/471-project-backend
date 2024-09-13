@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const cron = require("node-cron");
 
-const port = 5000;
+const port = 4000;
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 
 const app = express();
@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const uri = `mongodb+srv://turf:9t7s8TWNwTJpfZWc@cluster0.xk69pxb.mongodb.net/?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://turf:KGP0xnYA13ycaczU@cluster0.5oq48.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 console.log(uri);
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
