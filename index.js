@@ -91,7 +91,7 @@ async function run() {
       res.send(result);
     });
 
-    // Eron
+    
     app.get("/allTurf", async (req, res) => {
       const date = req.query.date;
       let query = {};
@@ -218,7 +218,7 @@ async function run() {
       }
     );
 
-    // Sakib
+   
     app.get("/booking", async (req, res) => {
       let query = {};
       if (req.query.customerEmail) {
@@ -339,7 +339,7 @@ async function run() {
       res.send(result);
     });
 
-    // Suraiya
+  
     /* display all shop product */
     app.get("/shop", async (req, res) => {
       let query = {};
